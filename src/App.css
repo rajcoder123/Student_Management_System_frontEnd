@@ -1,0 +1,16 @@
+
+.main{
+  background-color: rgb(93, 198, 230);
+}
+.maindiv{
+  padding: 10%;
+}
+.delete{
+  background-color: red;
+}
+.edit{
+  background-color: rgb(124, 154, 124);
+}
+.addbutton{
+  background-color: rgb(93, 198, 230);
+}

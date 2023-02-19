@@ -1,0 +1,11 @@
+li {
+        display: inline;
+        margin: 100px;
+        color: grey;
+        
+    }
+.nav{
+    background-color: rgb(46, 42, 42);
+    align-self: center;
+}
+  
