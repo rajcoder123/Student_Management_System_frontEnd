@@ -40,19 +40,19 @@ export default function Create() {
             <div class="form-group">  
                     {/* <label>Branch Name</label> */}
                     <input type="text" placeholder='Branch' onChange={(e) => setBranch(e.target.value)} value={branchName} />
-                    </div>
+             </div>
             <div class="form-group">
                     {/* <label>Email</label> */}
                     <input type="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} value={emailId} />
-                    </div>
-                    <div class="form-group">
+            </div>
+            <div class="form-group">
                     {/* <label>CGPA</label> */}
                     <input type="number" placeholder='CGPA' onChange={(e) => setCGPA(e.target.value)} value={cgpa} />
-                    </div>
-                    <div class="form-group">
+            </div>
+            <div class="form-group">
                     {/* <label>Phone Number</label> */}
                     <input type="number" placeholder='Phone Number' onChange={(e) => setPhoneNumber(e.target.value)} value={phoneNumber} />
-                    </div>
+            </div>
                 
                 <Button onClick={postData}  type='submit'>Submit</Button>
             

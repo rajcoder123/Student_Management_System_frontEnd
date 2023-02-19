@@ -5,7 +5,7 @@ import {Button} from 'react-bootstrap';
 import {Form} from 'react-bootstrap';
 export default function CreateProfessor() {
     const [name, setName] = useState('');
-    const [branchName, setBranchName] = useState('');
+    const [branchName, setBranch] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [emailId, setEmail] = useState('');
     // const [CGPA, setCGPA] = useState('');
@@ -15,7 +15,7 @@ export default function CreateProfessor() {
             window.alert("Incomplete Details")
             return;
         }
-        axios.post(`https://63efe6f6271439b7fe78057c.mockapi.io/Professor`, {
+        axios.post(`http://localhost:8080/professors`, {
             name,
             branchName,
             phoneNumber,
@@ -23,7 +23,7 @@ export default function CreateProfessor() {
         
         })
          setName('')
-         setBranchName('')
+         setBranch('')
          setPhoneNumber('')
          setEmail('')
 
@@ -39,7 +39,7 @@ export default function CreateProfessor() {
             </div>
             <div class="form-group">   
                     {/* <label>Last Name</label> */}
-                    <input type="text" placeholder='Branch Name' onChange={(e) => setBranchName(e.target.value)} value={branchName} />
+                    <input type="text" placeholder='Branch Name' onChange={(e) => setBranch(e.target.value)} value={branchName} />
                     </div>
             
 

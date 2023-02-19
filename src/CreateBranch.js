@@ -16,7 +16,7 @@ export default function CreateBranch() {
             window.alert("Incomplete Details")
             return;
         }
-        axios.post(`https://63e889595f3e35d898f1cf26.mockapi.io/Branch`, {
+        axios.post(`http://localhost:8080/branches`, {
             name,
             hod,
             seats,
